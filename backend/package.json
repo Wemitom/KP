@@ -1,0 +1,33 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index",
+    "build": "cd ../frontend && npm run build",
+    "install-client": "cd ../frontend && npm install",
+    "start-server": "npm run install-client && npm run build && npm run start",
+    "dev": "nodemon index"
+  },
+  "engines": {
+    "node": "14.16"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-jwt": "^6.0.0",
+    "express-jwt-authz": "^2.4.1",
+    "ignore-styles": "^5.0.1",
+    "image-url-validator": "^1.0.4",
+    "jwks-rsa": "^2.0.2",
+    "mongoose": "^5.12.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}

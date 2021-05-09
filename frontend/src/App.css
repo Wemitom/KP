@@ -1,0 +1,261 @@
+* {
+  margin: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(206, 203, 203);
+}
+
+.nav li {
+  padding: 0;
+  display: inline-block;
+  margin: 10px;
+  margin-top: 15px;
+  margin-left: 50px;
+  color: rgb(175, 0, 0);
+  text-decoration: none;
+}
+
+.nav a {
+  padding: 0;
+  color: rgb(175, 0, 0);
+  text-decoration: none;
+}
+
+.nav a:hover {
+  color: gray;
+}
+
+.page-header {
+  background-color: white;
+  border: 2px solid grey;
+  border-radius: 3%;
+  height: 50px;
+}
+
+.article-home {
+  width: 300px;
+  height: 340px;
+  border: 2px solid grey;
+  background-color: white;
+  border-radius: 1.8%;
+  padding: 8px;
+  margin: 2vh;
+  float: left;
+  word-wrap: break-word;
+  cursor: pointer;
+  text-decoration: none;
+  color: rgb(175, 0, 0);
+}
+
+.article-home-author {
+  float: right;
+}
+
+.article-home:hover {
+  color: blue;
+}
+
+.article-home:hover .article-home-img {
+  border-color: white;
+  background-size: 120%;
+}
+
+.article-home-img {
+  margin-bottom: 10px;
+  margin-left: -8.3px;
+  margin-right: -8.3px;
+  margin-top: -8.5px;
+  border: rgb(0, 0, 0, 0) solid 1px;
+  border-radius: 1.8%;
+  height: 180px;
+  background-size: 100%;
+  background-position: center;
+  transition: all 0.3s ease-in-out;
+}
+
+.img-fallback {
+  height: 180px;
+  text-align: center;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.articles {
+  margin-top: 2vh;
+  width: 100%;
+  display: inline-flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.article {
+  display: table;
+  margin: auto;
+  width: 70vw;
+  margin-top: 15px;
+  color: rgb(175, 0, 0);
+}
+
+.article-body {
+  width: 75vw;
+  height: auto;
+  background-color: white;
+  border: 2px solid grey;
+  color: rgb(175, 0, 0);
+  border-radius: 5px;
+  padding: 20px;
+  word-wrap: break-word;
+  overflow: auto;
+}
+
+.article-title {
+  float: left;
+}
+
+.page-404 {
+  text-align: center;
+}
+
+.login-logout {
+  cursor: pointer;
+}
+
+.login-logout:hover {
+  color: gray;
+}
+
+.verify-email {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  height: 25px;
+  width: 100%;
+  background-color: rgb(175, 0, 0);
+  color: white;
+}
+
+.new-article-form {
+  width: 300px;
+  margin: auto;
+  margin-top: 20px;
+  border: 2px solid grey;
+  background-color: white;
+  color: rgb(175, 0, 0);
+  padding: 2%;
+  padding-bottom: 1%;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.new-article-form textarea {
+  height: 6rem;
+  border-radius: 5px;
+}
+
+.new-article-form input[type='text']:invalid {
+  border-color: red;
+  background-color: #ffcccb;
+}
+
+.new-article-form input[type='text']:valid {
+  border-color: green;
+  background-color: lightgreen;
+}
+
+.btn {
+  display: inline-block;
+  background: rgb(175, 0, 0);
+  color: #fff;
+  border: none;
+  padding: 5px 15px;
+  width: 40%;
+  margin: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 15px;
+  font-family: inherit;
+  align-self: center;
+}
+
+.editor {
+  display: table;
+  margin: auto;
+}
+
+.btn:focus {
+  outline: none;
+}
+
+.btn:active {
+  transform: scale(0.98);
+}
+
+.editor button {
+  margin: 0px;
+  width: 100%;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.search-bar input {
+  position: relative;
+}
+
+.search-bar svg {
+  position: absolute;
+  left: 10px;
+  top: 0;
+  bottom: 0;
+  width: 20px;
+}
+
+.comments {
+  margin-top: 2vh;
+}
+
+.article-comment {
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+  height: auto;
+  background-color: white;
+  border: 2px solid grey;
+  border-radius: 5px;
+  padding: 10px;
+  word-wrap: break-word;
+  overflow: auto;
+}
+
+.delete-btn {
+  float: right;
+  color: rgb(175, 0, 0);
+}
+
+.delete-btn:active {
+  color: #ff0000;
+}
+
+.edit-btn {
+  float: right;
+  text-decoration: none;
+  color: darkred;
+}
+
+.edit-btn-article {
+  float: left;
+  text-decoration: none;
+  color: rgb(175, 0, 0);
+}
+
+.edit-btn-article:active {
+  color: #ff0000;
+}
